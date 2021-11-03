@@ -47,7 +47,6 @@
     display: flex;
     margin: auto 2rem;
     padding: 0.6rem 0;
-    
 }
 
 /* FORM */
@@ -75,4 +74,25 @@
     border: solid 2px blue;
     color: blue;
     transition: 0.3s;
+}
+
+@media(min-width: 366px){
+    .form form input,
+    .form form label {
+        display: flex;
+    }
+
+    .form form br {
+        display: none;
+    }
+}
+
+@media(min-width: 401px){
+    .form form input {
+        width: 100%;
+    }
+
+    .form form textarea {
+        width: 100%
+    }
 }
