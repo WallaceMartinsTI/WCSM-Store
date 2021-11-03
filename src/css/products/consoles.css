@@ -1,0 +1,46 @@
+/* Remove list style */
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main-container {
+    margin: 1rem 0.5rem;
+}
+
+.main-container .list-container .list-items {
+    padding: 0;
+}
+
+.main-container .list-container .list-items .console {
+    display: flex;
+    padding: 0.25rem;
+    border: solid 2px #0000CD;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+
+.main-container .list-container .list-items .console p {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .list-container .list-items .console p span {
+    align-self: flex-end;
+    background-color: rgb(0, 0, 205, 0.8);
+    color: #fff;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    margin-top: 5px;
+}
+
+.main-container .list-container .list-items .console img {
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px rgb(0, 0, 205, 0.8);
+    border-radius: 1rem;
+    margin-right: 5px;
+}

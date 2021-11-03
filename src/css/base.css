@@ -1,0 +1,86 @@
+/* CONFIGURAÇÕES GERAIS */
+/* Independente da plataforma */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* CABEÇALHO */
+
+header {
+    margin-bottom: 3px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar .navigation {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0.2rem;
+    background-color: #0000CD;
+}
+
+.navbar .navigation a {
+    text-decoration: none;
+    width: 30%;
+}
+
+.navbar .navigation a .nav-button {
+    color: #FFFF;
+    padding: 5px 0;
+    border-radius: 2.5rem;
+}
+
+.navbar .navigation a .nav-button:active {
+    color: #000;
+    transition: 0.3s;
+}
+
+.navbar .navigation .linha-vertical {
+    height: 50%;
+    border-left: solid 1px #FFF;
+}
+
+.navbar .logo img {
+    width: 70px;
+    height: 43px;
+}
+
+/* RODAPÉ */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000CD;
+    padding: 1rem;
+}
+
+footer a {
+    color: #FFF;
+}
+
+/* NO MOBILE DISABLE WEBSITE */
+
+
+@media(min-width: 426px) {
+    #mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,126 @@
+/* BODY */
+
+#mobile {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+header {
+    background-color: #FFF;
+}
+
+.main-container .titulo img {
+    width: 100%;
+    height: 60px;
+}
+
+/* NO MOBILE */
+#no-mobile .main-container {
+    background-color: #000;
+    color: #fff;
+    height: 92vh;
+}
+
+#no-mobile .main-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    color: red;
+}
+
+#no-mobile .main-container p {
+    margin: 0 20%;
+    margin-top: 2rem;
+    border: dashed 2px red;
+    padding: 1rem;
+}
+
+#no-mobile footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 8vh;
+}
+
+#no-mobile .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000CD;
+    padding: 1rem;
+}
+
+#no-mobile footer a {
+    color: #FFF;
+}
+/* RESPONSIVIDADE */
+
+/* Mobile S - 320px */
+@media(min-width: 320px) {
+    .product-selection {
+        display: flex;
+        flex-direction: column;
+        height: 75vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .product-selection .computers,
+    .product-selection .notebooks,
+    .product-selection .smartphones,
+    .product-selection .consoles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.6rem;
+        width: 100vw;
+        height: 5rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .product-selection .computers {
+        background-image: url('../images/products/titles/desktops.jpeg');
+    }
+
+    .product-selection .notebooks {
+        background-image: url('../images/products/titles/notebooks.jpeg');
+    }
+
+    .product-selection .smartphones {
+        background-image: url('../images/products/titles/smartphones.jpeg');
+        background-size: 100vw 35vh;
+    }
+
+    .product-selection .consoles {
+        background-image: url('../images/products/titles/consoles.jpeg');
+        background-size: 100vw 20vh;
+    }
+
+    .product-button {
+        width: 50%;
+        padding: 1rem;
+        
+        border: none;
+        border-radius: 2.5rem;
+        background: none;
+        color: #fff;
+        font-weight: bold;
+
+        opacity: 0.8;
+    }
+   
+    .product-button:active {
+        opacity: 1;
+        transition: 0.3s;
+    }
+}
+
+@media(min-width: 900px){
+    #no-mobile .main-container {
+        height: 98vh;
+    }
+    #no-mobile footer {
+        height: 2vh;
+    }
+}
